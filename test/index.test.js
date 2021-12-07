@@ -76,7 +76,7 @@ test('filterAu returns countries that contain au', () => {
   ]);
 });
 
-test.skip('getSneaks returns the list of sneaker brands', () => {
+test('getSneaks returns the list of sneaker brands', () => {
   expect(getSneaks(brands)).toStrictEqual([
     'Air Max',
     'Air Force',
