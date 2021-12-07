@@ -65,7 +65,7 @@ test('getCountryCodes return a nested array of countries and their codes', () =>
   ]);
 });
 
-test.skip('filterOceania returns countries in Oceania', () => {
+test('filterOceania returns countries in Oceania', () => {
   expect(filterOceania(countries).map((elem) => elem.iso2)).toStrictEqual(['KI', 'MH', 'PF', 'MH']);
 });
 

@@ -23,7 +23,14 @@ export const getCountryCodes = (countries) => {
 // OUTPUT: only countries in Oceana
 // REQS: use .filter
 
-export const filterOceania = (countries) => {};
+export const filterOceania = (countries) => {
+  const oceaniaCountries = countries.filter((c) => {
+    if (c.continent === 'Oceania') {
+      return c.iso2;
+    }
+  });
+  return oceaniaCountries;
+};
 
 // INPUT: the array of countries from data.js
 // OUTPUT: only countries that include the letters 'au'
